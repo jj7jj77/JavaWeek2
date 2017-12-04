@@ -1,0 +1,53 @@
+package javaclassweek2;
+import java.util.Scanner;
+public class CondoSales2 
+{
+     public static void main(String[] args)
+     {
+         Scanner jinput = new Scanner(System.in);   
+         System.out.print("Enter 1 for Park View, 2 for Golf View or 3 for Laske View");
+         int choice = jinput.nextInt();
+        
+         System.out.println("You want a garage? 0 for no, 1 for yes");
+         int g= jinput.nextInt();
+        
+         switch (choice)
+         {
+             case 1: System.out.println("Park View are $150,000");
+             if (g==0)
+                 System.out.println("no");
+             else
+                 System.out.println("plus $5,000 for the garage is $115,000");
+             break;
+             case 2: System.out.println("Golf View are $170,000");
+             if (g==0)
+                 System.out.println("no");
+             else
+                 System.out.println("plus $5,000 for the garage is $175,000");
+             break;
+             case 3: System.out.println("Lake View are $210,000");
+             if (g==0)
+                 System.out.println("no");
+             else
+                 System.out.println("plus $5,000 for the garage is $215,000");
+             break;
+             case 4: System.out.println("Invalid choice");
+         }
+     }
+}
+
+//if want to use if: if (choice =1, etc
+
+/*Can also do...:
+switch (choice);
+        {
+            case 1:  if (g==0)
+                        System.out.println("Park View are %150,000");
+                     else
+                        System.out.println("Park view with garage is add $155,000");
+                     break;
+            case 2: System.out.println("Golf View are %170,000");
+                break;
+            case 3: System.out.println("Lake View are %210,000");
+                break;
+            case 4: System.out.println("Invalid choice");*/
