@@ -1,0 +1,40 @@
+package javaclassweek2;
+import java.util.Scanner;
+public class AscendingAndDescending 
+{
+    public static void main(String[] args)
+    {
+        Scanner jinput = new Scanner(System.in);   
+        System.out.print("Enter an Integer");
+        int x = jinput.nextInt();
+        System.out.print("Enter an Integer");
+        int y = jinput.nextInt();   
+        System.out.print("Enter an Integer");
+        int z = jinput.nextInt();
+        
+        if (x < y && x < z)
+        {
+            System.out.print(x + "  ");
+            if (y<z)
+                System.out.print(y + "  ");
+            else 
+                System.out.print(z + "  ");
+         }
+        if (y < x && y < z)
+        {
+            System.out.print(y + "  ");
+            if (x<z)
+                System.out.print(x + "  ");
+            else 
+                System.out.print(z + "  ");
+        }
+        if (z < x && z < y)
+        {
+            System.out.print(z + "  ");
+            if (x<y)
+                System.out.print(x + "  ");
+            else 
+                System.out.print(y + "  ");
+        }
+    }
+}
