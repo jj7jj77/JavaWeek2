@@ -1,0 +1,18 @@
+package javaclassweek2;
+import java.util.Scanner;
+public class EvenOdd 
+{
+    public static void main(String[] args)
+    {
+        Scanner jinput = new Scanner(System.in);
+        System.out.print("Enter an Integer");
+        int x = jinput.nextInt();
+        
+        if(x%2==0) 
+            System.out.println ("The number if even");
+        else
+            System.out.println("The number if odd");
+    }
+}
+//int y=x%2;
+//if (y==0)
