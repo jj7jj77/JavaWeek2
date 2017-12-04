@@ -1,0 +1,22 @@
+package javaclassweek2;
+import java.util.Scanner;
+public class CondoSales 
+{
+     public static void main(String[] args)
+     {
+         Scanner jinput = new Scanner(System.in);   
+        System.out.print("Enter 1 for Park View, 2 for Golf View or 3 for Laske View");
+        int choice = jinput.nextInt();
+        switch (choice)
+        {
+            case 1: System.out.println("Park View are %150,000");
+                break;
+            case 2: System.out.println("Golf View are %170,000");
+                break;
+            case 3: System.out.println("Lake View are %210,000");
+                break;
+            case 4: System.out.println("Invalid choice");
+        }    
+     }
+}
+//if want to use if: if (choice =1, etc
